@@ -1,0 +1,39 @@
+{
+    "PARAM" : {
+        "sale_H": 4,              
+        "purchase_H2O": 0.6,      
+        "TUST": 0.0198,           
+        "rate": 0.09       
+    },
+    "EL" : {
+        "capacity": 1000000,          
+        "power_demand": 50,           
+        "water_consumption": 0.05,    
+        "capex": 1400,                
+        "opex": 42,            
+        "lifespan": 25                
+    },
+    "WD" : {
+        "capex": 1110,                
+        "opex": 22.2,            
+        "lifespan": 30                
+    },
+    "PV" : {
+        "capex": 770,                 
+        "opex": 15.4,             
+        "lifespan": 25                
+    },
+    "BESS" : {
+        "capex_power": 700,
+        "capex_energy": 15,
+        "opex": 14,
+        "lifespan": 25,
+        "E0": 0,
+        "η": 0.8
+    },
+    "EDS" : {
+        "spot_price": 0.0106,
+        "purchase": 0.058
+    }
+    
+}
