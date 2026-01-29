@@ -1,6 +1,6 @@
 import json
-from datetime import datetime, timedelta
-from xml.parsers.expat import model
+from datetime import datetime, timedelta   #biblioteca para manuseio do tempo: h, dia e intervalo de tempo
+#from xml.parsers.expat import model       # ?? le texto estruturado
 import pandas as pd
 import pyomo.environ as pyo
 
@@ -78,7 +78,7 @@ class H2sizer:
                      self.bess.capexP * model.Pbessmax + 
                         self.bess.capexE * model.Ebessmax +
                         self.eletr.capex * self.eletr.capac)
-            opex = 0
+            opex = 00
             return capex + opex
         model.objective = pyo.Objective(rule=objective_rule, sense=pyo.minimize)
 
